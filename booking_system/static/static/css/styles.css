@@ -49,17 +49,19 @@ header nav ul li a {
     position: relative;
     text-align: center;
     color: #fff;
+    overflow: hidden;
 }
 
 .hero-image {
     width: 100%;
-    height: auto;
+    height: 100%;
     filter: brightness(50%);
+    object-fit: cover;
 }
 
 .hero-content {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -82,8 +84,12 @@ header nav ul li a {
 }
 
 .amenities {
+    background-color: #ffffff;
     text-align: center;
-    padding: 20px;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 55px;
 }
 
 .amenities-list {
@@ -94,8 +100,16 @@ header nav ul li a {
 }
 
 .amenity {
-    width: 150px;
+    width: 300px;
+    padding-top: 10px;
     text-align: center;
+}
+
+.amenity img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 footer {
@@ -103,6 +117,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 .container {
@@ -143,16 +160,27 @@ footer {
     flex-direction: column;
 }
 
-.booking-form input, .booking-form select, .booking-form textarea {
+.form-group {
     margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .btn-submit {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #ff9800;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -161,7 +189,7 @@ footer {
 }
 
 .btn-submit:hover {
-    background-color: #0056b3;
+    background-color: #c97800;
 }
 
 footer {
