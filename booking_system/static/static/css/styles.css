@@ -15,7 +15,7 @@ header {
 }
 
 header .logo img {
-    height: 50px;
+    height: 80px;
 }
 
 header nav ul {
@@ -93,3 +93,4 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
