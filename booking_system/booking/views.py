@@ -4,9 +4,13 @@ from .models import Room, Booking
 from .forms import BookingForm
 from django.contrib import messages
 
+def index(request):
+    return render(request, 'index.html')
 
+def contact(request):
+    return HttpResponse("OHA Travellers Inn Online Booking System")
 
-def home(request):
+def desc(request):
     return HttpResponse("OHA Travellers Inn Online Booking System")
 
 def rooms_list(request):
